@@ -17,6 +17,7 @@ body {
     background-color: #F9F9FB;
 }
 
+
 img {
     vertical-align: middle;
 }
@@ -25,12 +26,15 @@ a {
     text-decoration: none;
     color: #000;
 }
+
 span{
     color: #000;
 }
+
 ul{
     padding: 0;
 }
+
 li{
     list-style: none;
 }
@@ -193,6 +197,51 @@ categories_list-item-span{
     width: 30px;
 }
 
+
+.title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+}
+
+@keyframes logoSlider {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
+
+.logo-slider {
+    display: inline-block;
+    animation: logoSlider 10s 1s infinite linear;
+}
+
+.logo-slider img {
+    margin: 0 120px;
+}
+
+.brands {
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 40px 0;
+    position: relative;
+    background-color: #E7E7E7;
+    border-radius: 15px;
+}
+
+.brands::before,
+.brands::after {
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
 
 
 
