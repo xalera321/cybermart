@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,23 +16,111 @@
 
 <body>
     <header>
-        <div class="container_header">
-            <div class="header">
-                <a class="logo" href="#" title="на главную">
-                    <img class="logo_img" src="./icons/logo.svg" title="#" alt="белый логотип">
-                    <img class="logo_img_2" src="./icons/logo_2.svg" title="#" alt="синий логотип">
-                </a>
-                <div class="text_container">
-                    <h1 class="main_text">
-                        <span class="evacuator_text">Эвакуатор</span>
-                        <span class="hours24_text">круглосуточно</span>
-                    </h1>
-                    <span class="icon_clock">
-                        <img src="./icons/clock.svg" alt="иконка часов">`
-                    </span>
+        <div class="header">
+            <div class="header_top">
+                <div class="container">
+                    <div class="navbar_links">
+                        <div class="navbar_left">
+                            <nav class="navbar_left-inner">
+                                <ul class="navbar_list-left">
+                                    <li class="navbar_list-item">
+                                        <a class="navbar_list-link" href='./about_company.html'>О компании</a>
+                                    </li>
+                                    <li class="navbar_list-item">
+                                        <a class="navbar_list-link" href='./contacts.html'>Контакты</a>
+                                    </li>
+                                    <li class="navbar_list-item">
+                                        <a class="navbar_list-link" href='#'>Оплата</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="navbar_left">
+                            <nav class="navbar_right-inner">
+                                <ul class="navbar_list-right">
+                                    <li class="navbar_list-item">
+                                        <a class="navbar_list-link-number">Звоните с 9:00 до 21:00</a>
+                                    </li>
+                                    <li class="navbar_list-item">
+                                        <a class="navbar_list-link navbar_list-link-last" href="tel:89999999999">
+                                            +7 (999) 999-99-99
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom">
+                <div class="container">
+                    <div class="navbar">
+                        <div class="header_down-inner">
+                            <a class="logo" href="#" title="на главную">
+                                <img class="logo_img" src="./icons/logo.svg" title="#" alt="белый логотип">
+                                <img class="logo_img_2" src="./icons/logo_2.svg" title="#" alt="синий логотип">
+                            </a>
+                        </div>
+                        <div class="search-container">
+                            <input type="text" id="search-bar" placeholder="Поиск товаров">
+                            <button type="submit" id="search-button">
+                                <img src="./icons/search.svg" alt="Search">
+                            </button>
+                        </div>
+                        <ul class="basket">
+                            <li class="basket_link">
+                                <a href="./shopping_cart.html" class="busket_a"><img src="./icons/shopping_cart.svg"
+                                        alt="корзина"></a>
+                                <span class="busket_span">В корзине<br>нет товаров</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+    <div class="fast_links">
+        <div class="container_fast_links">
+            <ul class="categories_list">
+                <li class="categories_list-item">
+                    <a href="catalog.html" class="categories_list-item-link">
+                        <img src="./icons/phone.svg" alt="телефоны" class="categories_list-item-img">
+                        <span class="categories_list-item-span">Телефоны</span>
+                    </a>
+                </li>
+                <li class="categories_list-item">
+                    <a href="catalog.html" class="categories_list-item-link">
+                        <img src="./icons/tablet.svg" alt="планшеты" class="categories_list-item-img">
+                        <span class="categories_list-item-span">Планшеты</span>
+                    </a>
+                </li>
+                <li class="categories_list-item">
+                    <a href="catalog.html" class="categories_list-item-link">
+                        <img src="./icons/laptop.svg" alt="ноутбуки" class="categories_list-item-img">
+                        <span class="categories_list-item-span">Ноутбуки</span>
+                    </a>
+                </li>
+                <li class="categories_list-item">
+                    <a href="catalog.html" class="categories_list-item-link">
+                        <img src="./icons/tv.svg" alt="телевизоры" class="categories_list-item-img" class="categories_list-item-img">
+                        <span class="categories_list-item-span">Телевизоры</span>
+                    </a>
+                </li>
+                <li class="categories_list-item">
+                    <a href="catalog.html" class="categories_list-item-link">
+                        <img src="./icons/console.svg" alt="игровые приставки" class="categories_list-item-img">
+                        <span class="categories_list-item-span">Игровые приставки</span>
+                    </a>
+                </li>
+                <li class="categories_list-item">
+                    <a href="catalog.html" class="categories_list-item-link">
+                        <img src="./icons/audio.svg" alt="аудиотехника" class="categories_list-item-img">
+                        <span class="categories_list-item-span">Аудиотехника</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 </body>
+</html>
