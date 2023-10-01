@@ -15,69 +15,64 @@
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <div class="header_top">
-                <div class="container">
-                    <div class="navbar_links">
-                        <div class="navbar_left">
-                            <nav class="navbar_left-inner">
-                                <ul class="navbar_list-left">
-                                    <li class="navbar_list-item">
-                                        <a class="navbar_list-link" href='./about_company.html'>О компании</a>
-                                    </li>
-                                    <li class="navbar_list-item">
-                                        <a class="navbar_list-link" href='./contacts.html'>Контакты</a>
-                                    </li>
-                                    <li class="navbar_list-item">
-                                        <a class="navbar_list-link" href='#'>Оплата</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="navbar_left">
-                            <nav class="navbar_right-inner">
-                                <ul class="navbar_list-right">
-                                    <li class="navbar_list-item">
-                                        <a class="navbar_list-link-number">Звоните с 9:00 до 21:00</a>
-                                    </li>
-                                    <li class="navbar_list-item">
-                                        <a class="navbar_list-link navbar_list-link-last" href="tel:89999999999">
-                                            +7 (999) 999-99-99
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
+    <header class="header">
+        <div class="header_top">
+            <div class="container">
+                <div class="navbar_links">
+                    <div class="navbar_left">
+                        <nav class="navbar_left-inner">
+                            <ul class="navbar_list-left">
+                                <li class="navbar_list-item">
+                                    <a class="navbar_list-link text_white" href='./about_company.html'>О компании</a>
+                                </li>
+                                <li class="navbar_list-item">
+                                    <a class="navbar_list-link text_white" href='./contacts.html'>Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                </div>
-            </div>
-            <div class="header_bottom">
-                <div class="container">
-                    <div class="navbar">
-                        <div class="header_down-inner">
-                            <a class="logo" href="#" title="на главную">
-                                <img class="logo_img" src="./icons/logo.svg" title="#" alt="белый логотип">
-                                <img class="logo_img_2" src="./icons/logo_2.svg" title="#" alt="синий логотип">
-                            </a>
-                        </div>
-                        <div class="search-container">
-                            <input type="text" id="search-bar" placeholder="Поиск товаров">
-                            <button type="submit" id="search-button">
-                                <img src="./icons/search.svg" alt="Search">
-                            </button>
-                        </div>
-                        <ul class="basket">
-                            <li class="basket_link">
-                                <a href="./shopping_cart.html" class="busket_a"><img src="./icons/shopping_cart.svg"
-                                        alt="корзина"></a>
-                                <span class="busket_span">В корзине<br>нет товаров</span>
-                            </li>
-                        </ul>
+                    <div class="navbar_right">
+                        <nav class="navbar_right-inner">
+                            <ul class="navbar_list-right">
+                                <li class="navbar_list-item">
+                                    <a class="navbar_list-link-number text_white">Звоните с 9:00 до 21:00</a>
+                                </li>
+                                <li class="navbar_list-item">
+                                    <a class="navbar_list-link navbar_list-link-last text_white" href="tel:89999999999">
+                                        +7 (999) 999-99-99
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="header_bottom">
+            <div class="container">
+                <div class="navbar">
+                    <div class="header_down-inner">
+                        <a class="logo" href="#" title="на главную">
+                            <img class="logo_img" src="./icons/logo.svg" title="#" alt="белый логотип">
+                        </a>
+                    </div>
+                    <div class="search-container">
+                        <input type="text" id="search-bar" placeholder="Поиск товаров">
+                        <button type="submit" id="search-button">
+                            <img src="./icons/search.svg" alt="Search">
+                        </button>
+                    </div>
+                    <ul class="basket">
+                        <li class="basket_link">
+                            <a href="./shopping_cart.html" class="busket_a"><img src="./icons/shopping_cart.svg"
+                                    alt="корзина"></a>
+                            <span class="busket_span text_white">В корзине<br>нет товаров</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     </header>
     <div class="fast_links">
         <div class="container_fast_links">
@@ -126,17 +121,17 @@
         <div class="container">
             <h1 class="title">Популярные бренды</h1>
             <div class="brands">
-                <div class="logo-slider">
+                <div class="logo_slider">
                     <img src="./icons/apple.svg" alt="">
                     <img src="./icons/xbox.svg" alt="">
-                    <img src="./icons/samsung.svg" alt="">
+                    <img src="./icons/samsung.svg" alt="" class="logo_slider-img-samsung">
                     <img src="./icons/lg.svg" alt="">
                     <img src="./icons/playstation.svg" alt="">
                 </div>
-                <div class="logo-slider">
+                <div class="logo_slider">
                     <img src="./icons/apple.svg" alt="">
                     <img src="./icons/xbox.svg" alt="">
-                    <img src="./icons/samsung.svg" alt="">
+                    <img src="./icons/samsung.svg" alt="" class="logo_slider-img-samsung">
                     <img src="./icons/lg.svg" alt="">
                     <img src="./icons/playstation.svg" alt="">
                 </div>
@@ -144,7 +139,88 @@
             </div>
         </div>
     </section>
+
+    <section>
+        <div class="container">
+            <h1 class="title">Наши преимущества</h1>
+            <div class="advantages">
+                <div class="advantages_item">
+                    <img src="./icons/best_prices.svg" alt="">
+                    <span class="advantages_item-name text_white">Лучшие цены</span>
+                </div>
+                <div class="advantages_item">
+                    <img src="./icons/fast_delivery.svg" alt="">
+                    <span class="advantages_item-name text_white">Быстрая доставка</span>
+                </div>
+                <div class="advantages_item">
+                    <img src="./icons/quality_control.svg" alt="">
+                    <span class="advantages_item-name text_white">Контроль качества</span>
+                </div>
+                <div class="advantages_item">
+                    <img src="./icons/wide_range.svg" alt="">
+                    <span class="advantages_item-name text_white">Широкий ассортимент</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_content">
+                <div class="footer_content-left">
+                    <ul class="footer_list-left">
+                        <li class="footer_list-item">
+                            <a class="footer_list-link" href="#" title="на главную">
+                                <img class="logo_img" src="./icons/logo.svg" title="#" alt="белый логотип">
+                            </a>
+                        </li>
+                        <li class="footer_list-item">
+                            <a class="footer_list-link text_white" href='./about_company.html'>О компании</a>
+                        </li>
+                        <li class="footer_list-item">
+                            <a class="footer_list-link text_white" href='./contacts.html'>Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_content-right">
+                    <ul class="footer_list-right">
+                        <li class="footer_list-item">
+                            <p class="footer_list-link-contacts text_white">Контакты</p>
+                        </li>
+                        <li class="footer_list-item">
+                            <a class="footer_list-link footer_list-link-last text_white" href="tel:89999999999">
+                                +7 (999) 999-99-99
+                            </a>
+                            <a class="footer_list-link footer_list-link-last text_white" href="tel:89999999999">
+                                cybermart@gmail.com
+                            </a>
+                        </li>
+                        <li class="footer_list-item">
+                            <p class="footer_list-link text_white">г. Владимир, ул. Университетская, д. 4, к. 321</p>
+                        </li>
+                        <ul class="social_links">
+                            <li class="social_links-item">
+                                <a class="contacts" href="#" title="телеграм">
+                                    <img class="contacts_img" src="./icons/telegram.svg" title="#" alt="">
+                                </a>
+                            </li>
+                            <li class="social_links-item">
+                                <a class="contacts" href="#" title="вконтакте">
+                                    <img class="contacts_img" src="./icons/vk.svg" title="#" alt="">
+                                </a>
+                            </li>
+                            <li class="social_links-item">
+                                <a class="contacts" href="#" title="ютуб">
+                                    <img class="contacts_img" src="./icons/youtube.svg" title="#" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     <script src="index.js"></script>
 </body>
-</html>
+</html> 
