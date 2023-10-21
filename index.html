@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap">
     <link rel="icon" href="./icons/favicon.ico" type="image/x-icon">
 </head>
 
@@ -64,9 +64,10 @@
                     </div>
                     <ul class="basket">
                         <li class="basket_link">
-                            <a href="./shopping_cart.html" class="busket_a"><img src="./icons/shopping_cart.svg"
-                                    alt="корзина"></a>
-                            <span class="busket_span text_white">В корзине<br>нет товаров</span>
+                            <a href="./shopping_cart.html" class="basket_a">
+                                <img src="./icons/shopping_cart.svg" alt="корзина">
+                                <span class="basket_span text_white"> Корзина</span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -117,32 +118,103 @@
         </div>
     </div>
 
+
+    <div class="container">
+        <div class="slider">
+            <div class="slider__wrapper">
+                <div class="slider__items">
+                    <div class="slider__item">
+                        <img src="./img/slider_1.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img src="./img/slider_1.jpg" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img src="./img/slider_1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="slider__control" data-slide="prev"></a>
+            <a href="#" class="slider__control" data-slide="next"></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
     <section>
         <div class="container">
-            <h1 class="title">Популярные бренды</h1>
-            <div class="brands">
-                <div class="logo_slider">
-                    <img src="./icons/apple.svg" alt="">
-                    <img src="./icons/xbox.svg" alt="">
-                    <img src="./icons/samsung.svg" alt="" class="logo_slider-img-samsung">
-                    <img src="./icons/lg.svg" alt="">
-                    <img src="./icons/playstation.svg" alt="">
-                </div>
-                <div class="logo_slider">
-                    <img src="./icons/apple.svg" alt="">
-                    <img src="./icons/xbox.svg" alt="">
-                    <img src="./icons/samsung.svg" alt="" class="logo_slider-img-samsung">
-                    <img src="./icons/lg.svg" alt="">
-                    <img src="./icons/playstation.svg" alt="">
-                </div>
-                
+            <h2 class="headline">Популярные бренды</h2>
+            <div class="marquee">
+                <ul class="marquee-content">
+                    <li><img src="./icons/apple.svg" alt=""></li>
+                    <li><img src="./icons/xbox.svg" alt=""></li>
+                    <li><img src="./icons/samsung.svg" alt=""></li>
+                    <li><img src="./icons/lg.svg" alt=""></li>
+                    <li><img src="./icons/playstation.svg" alt=""></li>
+                </ul>
             </div>
         </div>
     </section>
 
+
+
     <section>
         <div class="container">
-            <h1 class="title">Наши преимущества</h1>
+            <h2 class="headline">Каталог</h2>
+            <div class="catalog">
+                <div class="card">
+                    <div class="card_item">
+
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_item">
+                
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_item">
+                
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_item">
+                
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_item">
+                
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_item">
+                
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_item">
+                
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_item">
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="container">
+            <h2 class="headline">Наши преимущества</h2>
             <div class="advantages">
                 <div class="advantages_item">
                     <img src="./icons/best_prices.svg" alt="">
@@ -191,12 +263,13 @@
                             <a class="footer_list-link footer_list-link-last text_white" href="tel:89999999999">
                                 +7 (999) 999-99-99
                             </a>
+                            <img class="line_contacts" src="./icons/line_contacts.svg">
                             <a class="footer_list-link footer_list-link-last text_white" href="tel:89999999999">
                                 cybermart@gmail.com
                             </a>
                         </li>
                         <li class="footer_list-item">
-                            <p class="footer_list-link text_white">г. Владимир, ул. Университетская, д. 4, к. 321</p>
+                            <a class="footer_list-link text_white" href="https://yandex.ru/maps/192/vladimir/house/universitetskaya_ulitsa_4/YEkYdQFmTUAEQFtsfX1ydn5qYA==/?indoorLevel=1&ll=40.366453%2C56.137295&z=16.87">г. Владимир, ул. Университетская, д. 4, к. 321</a>
                         </li>
                         <ul class="social_links">
                             <li class="social_links-item">
@@ -223,4 +296,4 @@
     
     <script src="index.js"></script>
 </body>
-</html> 
+</html>
