@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Магазин техники Cybermart">
     <title>Cybermart</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -119,25 +120,43 @@
     </div>
 
 
-    <div class="container">
-        <div class="slider">
-            <div class="slider__wrapper">
-                <div class="slider__items">
-                    <div class="slider__item">
-                        <img src="./img/slider_1.jpg" alt="">
+
+
+
+    <!-- Slider main container -->
+    <section>
+        <div class="container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="slider-image">
+                            <img src="./img/slider_2.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="slider__item">
-                        <img src="./img/slider_1.jpg" alt="">
+                    <div class="swiper-slide">
+                        <div class="slider-image">
+                            <img src="./img/slider_2.jpg" alt="">
+                        </div>
                     </div>
-                    <div class="slider__item">
-                        <img src="./img/slider_1.jpg" alt="">
+                    <div class="swiper-slide">
+                        <div class="slider-image">
+                            <img src="./img/slider_2.jpg" alt="">
+                        </div>
                     </div>
                 </div>
+    
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-            <a href="#" class="slider__control" data-slide="prev"></a>
-            <a href="#" class="slider__control" data-slide="next"></a>
+    
+
+            <div class="swiper-pagination"></div>
         </div>
-    </div>
+    </section>
+
 
 
 
@@ -294,6 +313,7 @@
         </div>
     </footer>
     
-    <script src="index.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
