@@ -71,7 +71,7 @@
                         <li class="basket__link">
                             <a href="./shopping_cart.html" class="basket__a">
                                 <img src="./icons/shopping_cart.svg" alt="корзина">
-                                <span class="basket__span text-white"> Корзина</span>
+                                <span class="basket__span text-white">Корзина</span>
                             </a>
                         </li>
                     </ul>
@@ -210,7 +210,8 @@
                         </a>
                         <div class="card__prices">
                             <div class="card__price card__price--discount">95 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="1" data-sb-product-name="Apple IPhone 14 Pro 128Gb, темно-фиолетовый"
+                            data-sb-product-price="95990" data-sb-product-quantity="1" data-sb-product-img="./img/iphone_14_pro.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
@@ -221,7 +222,7 @@
 
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/pixel_table.png" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/pixel_table.webp" alt="Apple IPhone 14 PRO Max Gold" />
                         </a>
                     </div>
 
@@ -242,7 +243,7 @@
 
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/samsung_tv.png" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/samsung_tv.webp" alt="Apple IPhone 14 PRO Max Gold" />
                         </a>
                     </div>
 
@@ -263,7 +264,7 @@
 
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/yandex_speaker.png" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/yandex_speaker.webp" alt="Apple IPhone 14 PRO Max Gold" />
                         </a>
                     </div>
 
@@ -368,7 +369,7 @@
             <div class="catalog__page">
                 <a href="./catalog.html">
                     <button class="catalog__page--btn">
-                        Показать ещё
+                        Перейти в каталог
                     </button>
                 </a>
             </div>
@@ -393,21 +394,21 @@
         <div class="container">
             <h2 class="headline">Наши преимущества</h2>
             <div class="advantages">
-                <div class="advantages_item">
+                <div class="advantages__item">
                     <img src="./icons/best_prices.svg" alt="">
-                    <span class="advantages_item-name text_white">Лучшие цены</span>
+                    <span class="advantages__name text_white">Лучшие цены</span>
                 </div>
-                <div class="advantages_item">
+                <div class="advantages__item">
                     <img src="./icons/fast_delivery.svg" alt="">
-                    <span class="advantages_item-name text_white">Быстрая доставка</span>
+                    <span class="advantages__name text_white">Быстрая доставка</span>
                 </div>
-                <div class="advantages_item">
+                <div class="advantages__item">
                     <img src="./icons/quality_control.svg" alt="">
-                    <span class="advantages_item-name text_white">Контроль качества</span>
+                    <span class="advantages__name text_white">Контроль качества</span>
                 </div>
-                <div class="advantages_item">
+                <div class="advantages__item">
                     <img src="./icons/wide_range.svg" alt="">
-                    <span class="advantages_item-name text_white">Широкий ассортимент</span>
+                    <span class="advantages__name text_white">Широкий ассортимент</span>
                 </div>
             </div>
         </div>
@@ -456,12 +457,12 @@
                                     <img class="social__img" src="./icons/telegram.svg" title="#" alt="телеграм">
                                 </a>
                             </li>
-                            <li class="social__item"">
+                            <li class="social__item">
                                 <a class=" social__contacts" href="#" title="вконтакте">
                                 <img class="social__img" src="./icons/vk.svg" title="#" alt="вконтакте">
                                 </a>
                             </li>
-                            <li class="social__item"">
+                            <li class="social__item">
                                 <a class=" social__contacts" href="#" title="ютуб">
                                 <img class="social__img" src="./icons/youtube.svg" title="#" alt="ютуб">
                                 </a>
@@ -475,5 +476,35 @@
 
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" href="./css/smartbasket.min.css">
+    
+    <div class="smart-basket__wrapper"></div>
+    
+    <script src="./js/smartbasket.min.js"></script>
+    
+    <script>
+        $(function () {
+            $('.smart-basket__wrapper').smbasket({
+                productElement: 'card',
+                buttonAddToBasket: 'card__add',
+                productPrice: 'product__price-number',
+                productSize: 'product__size-element',
+
+                productQuantityWrapper: 'product__quantity',
+                smartBasketMinArea: 'basket',
+                countryCode: '+7',
+                smartBasketCurrency: '₽',
+                smartBasketMinIconPath: './icons/basket.svg',
+
+                agreement: {
+                    isRequired: true,
+                    isChecked: true,
+                },
+                nameIsRequired: false,
+            });
+        });
+    </script>
 </body>
 </html>
