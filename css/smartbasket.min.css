@@ -51,6 +51,10 @@
     z-index: 10000
 }
 
+.product__quantity{
+    display: none;
+}
+
 @media (max-width:1030px) {
     .smart-basket {
         padding: 10px
@@ -302,9 +306,10 @@
 
 .smart-basket__min{
     background-color: #f0f8ff00;
-    position: absolute;
+    position: relative;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 .smart-basket__min-icon{

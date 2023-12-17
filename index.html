@@ -32,6 +32,9 @@
                                 <li class="menu-list__item">
                                     <a class="menu-list__link text-white" href='./contacts.html'>Контакты</a>
                                 </li>
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link text-white" href='./catalog.html'>Каталог</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -39,7 +42,7 @@
                         <nav class="menu__inner">
                             <ul class="menu-list__right">
                                 <li class="menu-list__item">
-                                    <a class="menu-list__link_number text-white">Звоните с 9:00 до
+                                    <a class="menu-list__link number text-white">Звоните с 9:00 до
                                         21:00</a>
                                 </li>
                                 <li class="menu-list__item">
@@ -60,6 +63,11 @@
                         <a class="logo" href="./index.html" title="на главную">
                             <img class="logo__img" src="./icons/logo.svg" title="#" alt="логотип">
                         </a>
+
+                        <a class="logo-2" href="./index.html" title="на главную">
+                            <img class="logo-2__img" src="./icons/logo_2.svg" title="#" alt="логотип 2">
+                        </a>
+
                     </div>
                     <div class="search">
                         <input type="text" id="search__bar" placeholder="Поиск товаров">
@@ -68,54 +76,49 @@
                         </button>
                     </div>
                     <ul class="basket">
-                        <li class="basket__link">
-                            <a href="./shopping_cart.html" class="basket__a">
-                                <img src="./icons/shopping_cart.svg" alt="корзина">
-                                <span class="basket__span text-white">Корзина</span>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </div>
         </div>
     </header>
+    
     <div class="fast_links">
         <div class="container_fast_links">
             <ul class="categories_list">
                 <li class="categories_list-item">
-                    <a href="./catalog.html" class="categories_list-item-link">
+                    <a href="./catalog.html?category=smartphones" class="categories_list-item-link">
                         <img src="./icons/phone.svg" alt="телефоны" class="categories_list-item-img">
                         <span class="categories_list-item-span">Телефоны</span>
                     </a>
                 </li>
                 <li class="categories_list-item">
-                    <a href="./catalog.html" class="categories_list-item-link">
+                    <a href="./catalog.html?category=tablets" class="categories_list-item-link">
                         <img src="./icons/tablet.svg" alt="планшеты" class="categories_list-item-img">
                         <span class="categories_list-item-span">Планшеты</span>
                     </a>
                 </li>
                 <li class="categories_list-item">
-                    <a href="./catalog.html" class="categories_list-item-link">
+                    <a href="./catalog.html?category=laptops" class="categories_list-item-link">
                         <img src="./icons/laptop.svg" alt="ноутбуки" class="categories_list-item-img">
                         <span class="categories_list-item-span">Ноутбуки</span>
                     </a>
                 </li>
                 <li class="categories_list-item">
-                    <a href="./catalog.html" class="categories_list-item-link">
+                    <a href="./catalog.html?category=televisions" class="categories_list-item-link">
                         <img src="./icons/tv.svg" alt="телевизоры" class="categories_list-item-img"
                             class="categories_list-item-img">
                         <span class="categories_list-item-span">Телевизоры</span>
                     </a>
                 </li>
                 <li class="categories_list-item">
-                    <a href="./catalog.html" class="categories_list-item-link">
+                    <a href="./catalog.html?category=consoles" class="categories_list-item-link">
                         <img src="./icons/console.svg" alt="игровые приставки" class="categories_list-item-img">
                         <span class="categories_list-item-span">Игровые приставки</span>
                     </a>
                 </li>
                 <li class="categories_list-item">
-                    <a href="./catalog.html" class="categories_list-item-link">
+                    <a href="./catalog.html?category=audio" class="categories_list-item-link">
                         <img src="./icons/audio.svg" alt="аудиотехника" class="categories_list-item-img">
                         <span class="categories_list-item-span">Аудиотехника</span>
                     </a>
@@ -150,7 +153,7 @@
                                 По самым лучшим ценам!
                             </p>
                         </div>
-                        <div class="slider-image">
+                        <div class="slider-image macbook">
                             <img src="./img/slide_2.png" alt="">
                         </div>
                     </div>
@@ -182,11 +185,11 @@
             <h2 class="headline">Популярные бренды</h2>
             <div class="marquee">
                 <ul class="marquee-content">
-                    <li><img src="./icons/apple.svg" alt=""></li>
-                    <li><img src="./icons/xbox.svg" alt=""></li>
-                    <li><img src="./icons/samsung.svg" alt=""></li>
-                    <li><img src="./icons/lg.svg" alt=""></li>
-                    <li><img src="./icons/playstation.svg" alt=""></li>
+                    <li><img src="./icons/apple.svg" class="marquee-element" alt=""></li>
+                    <li><img src="./icons/xbox.svg" class="marquee-element" alt=""></li>
+                    <li><img src="./icons/samsung.svg" class="marquee-element samsung" alt=""></li>
+                    <li><img src="./icons/lg.svg" class="marquee-element" alt=""></li>
+                    <li><img src="./icons/playstation.svg" class="marquee-element" alt=""></li>
                 </ul>
             </div>
         </div>
@@ -198,9 +201,10 @@
             <h2 class="headline">Каталог</h2>
             <div class="catalog">
                 <div class="card">
+
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/iphone_14_pro.webp" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/iphone_14_pro.webp" alt=""/>
                         </a>
                     </div>
 
@@ -208,6 +212,8 @@
                         <a href="./catalog.html" class="card__title">
                             Apple IPhone 14 Pro 128Gb, темно-фиолетовый
                         </a>
+                        <div class="product__quantity"></div>
+
                         <div class="card__prices">
                             <div class="card__price card__price--discount">95 990 ₽</div>
                             <button class="card__add" data-sb-id-or-vendor-code="1" data-sb-product-name="Apple IPhone 14 Pro 128Gb, темно-фиолетовый"
@@ -215,6 +221,7 @@
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+
                     </div>
                 </div>
 
@@ -223,19 +230,27 @@
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
                             <img src="./img/pixel_table.webp" alt="Apple IPhone 14 PRO Max Gold" />
-                        </a>
+                        </a>  
                     </div>
 
                     <div class="card__bottom">
                         <a href="./catalog.html" class="card__title">
                             Google Pixel Tablet 8/128, зеленый
                         </a>
+                        <div class="product__quantity"></div>
+
                         <div class="card__prices">
                             <div class="card__price card__price--discount">54 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add"
+                                data-sb-id-or-vendor-code="2"
+                                data-sb-product-name="Google Pixel Tablet 8/128, зеленый"
+                                data-sb-product-price="54990"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="./img/pixel_table.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+
                     </div>
                 </div>
 
@@ -251,12 +266,20 @@
                         <a href="./catalog.html" class="card__title">
                             50” Телевизор Samsung UE50AU7100U LED, HDR, 2021
                         </a>
+                        <div class="product__quantity"></div>
+
                         <div class="card__prices">
                             <div class="card__price card__price--discount">32 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add"
+                                data-sb-id-or-vendor-code="3"
+                                data-sb-product-name="50” Телевизор Samsung UE50AU7100U LED, HDR, 2021"
+                                data-sb-product-price="32990"
+                                data-sb-product-quantity="1"
+                                data-sb-product-img="./img/samsung_tv.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+
                     </div>
                 </div>
 
@@ -272,12 +295,17 @@
                         <a href="./catalog.html" class="card__title">
                             Умная колонка Яндекс.Станция Мини, черный
                         </a>
+                        <div class="product__quantity"></div>
+
                         <div class="card__prices">
                             <div class="card__price card__price--discount">5 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="4"
+                                data-sb-product-name="Умная колонка Яндекс.Станция Мини, черный" data-sb-product-price="5990"
+                                data-sb-product-quantity="2" data-sb-product-img="./img/yandex_speaker.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+
                     </div>
                 </div>
 
@@ -293,12 +321,17 @@
                         <a href="./catalog.html" class="card__title">
                             Samsung Galaxy S23 Ultra 256 ГБ, черный
                         </a>
+                        <div class="product__quantity"></div>
+
                         <div class="card__prices">
                             <div class="card__price card__price--discount">97 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="5"
+                                data-sb-product-name="Samsung Galaxy S23 Ultra 256 ГБ, черный" data-sb-product-price="97990"
+                                data-sb-product-quantity="1" data-sb-product-img="./img/samsung_galaxy_s23.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+
                     </div>
                 </div>
 
@@ -314,12 +347,17 @@
                         <a href="./catalog.html" class="card__title">
                             15,6” Ноутбук MSI Modern 15 B12M-211RU, черный
                         </a>
+                        <div class="product__quantity"></div>
+
                         <div class="card__prices">
                             <div class="card__price card__price--discount">41 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="6"
+                                data-sb-product-name="15,6” Ноутбук MSI Modern 15 B12M-211RU, черный" data-sb-product-price="41990"
+                                data-sb-product-quantity="1" data-sb-product-img="./img/msi_modern.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+
                     </div>
                 </div>
 
@@ -335,12 +373,17 @@
                         <a href="./catalog.html" class="card__title">
                             Игровая приставка Sony PlayStation 5 Digital Edition 825 ГБ
                         </a>
+                        <div class="product__quantity"></div>
+
                         <div class="card__prices">
                             <div class="card__price card__price--discount">58 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="7"
+                                data-sb-product-name="Игровая приставка Sony PlayStation 5 Digital Edition 825 ГБ" data-sb-product-price="58990"
+                                data-sb-product-quantity="1" data-sb-product-img="./img/playstation_5.png">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+
                     </div>
                 </div>
 
@@ -356,12 +399,17 @@
                         <a href="./catalog.html" class="card__title">
                             Игровая приставка Sony PlayStation 4 Slim 500 ГБ
                         </a>
+                        <div class="product__quantity"></div>
+
                         <div class="card__prices">
                             <div class="card__price card__price--discount">34 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="8"
+                                data-sb-product-name="Игровая приставка Sony PlayStation 5 Digital Edition 825 ГБ" data-sb-product-price="34990"
+                                data-sb-product-quantity="1" data-sb-product-img="./img/playstation_4.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+
                     </div>
                 </div>
 
@@ -392,7 +440,7 @@
 
     <section>
         <div class="container">
-            <h2 class="headline">Наши преимущества</h2>
+            <h2 class="headline advantages__title">Наши преимущества</h2>
             <div class="advantages">
                 <div class="advantages__item">
                     <img src="./icons/best_prices.svg" alt="">
@@ -420,8 +468,12 @@
                 <div class="footer__left">
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a class="footer__link" href="./index.html" title="на главную">
-                                <img class="logo__img" src="./icons/logo.svg" title="#" alt="логотип">
+                            <a class="footer__link logo" href="./index.html" title="на главную">
+                                <img class="logo__img logo__img-footer" src="./icons/logo.svg" title="#" alt="логотип">
+                            </a>
+
+                            <a class="footer__link logo-2" href="./index.html" title="на главную">
+                                <img class="logo-2__img logo-2__img-footer" src="./icons/logo_2.svg" title="#" alt="логотип 2">
                             </a>
                         </li>
                         <li class="footer__item">
@@ -429,6 +481,9 @@
                         </li>
                         <li class="footer__item">
                             <a class="footer__link text-white" href='./contacts.html'>Контакты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link text-white" href='./catalog.html'>Каталог</a>
                         </li>
                     </ul>
                 </div>

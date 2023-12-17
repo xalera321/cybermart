@@ -12,7 +12,6 @@
     };
 
     let updateChildren = function (item, children) {
-        console.log(children);
         removeChildren(item);
         for (let i = 0; i < children.length; i += 1) {
             item.appendChild(children[i]);
@@ -23,10 +22,43 @@
     let catalogNav = catalogSection.querySelector('.catalog__nav');
     let catalogItems = catalogSection.querySelectorAll('.card');
 
+    let applyCategoryFilter = function (categoryParam) {
+        let categoryButton;
+
+        if (categoryParam === 'all') {
+            categoryButton = catalogNav.querySelector('[data-filter="all"]');
+        } else {
+            categoryButton = catalogNav.querySelector(`[data-filter="${categoryParam}"]`);
+        }
+
+        if (categoryButton) {
+            let previousBtnActive = catalogNav.querySelector('.catalog__nav-btn.is-active');
+            previousBtnActive.classList.remove('is-active');
+            categoryButton.classList.add('is-active');
+
+            let filteredItems = [];
+            for (let i = 0; i < catalogItems.length; i += 1) {
+                let current = catalogItems[i];
+                if (current.getAttribute('data-category') === categoryParam || categoryParam === 'all') {
+                    filteredItems.push(current);
+                }
+            }
+
+            updateChildren(catalog, filteredItems);
+        }
+    };
+
+    // Добавьте следующий код для обработки параметров запроса при загрузке страницы
+    let urlParams = new URLSearchParams(window.location.search);
+    let categoryParam = urlParams.get('category');
+
+    if (categoryParam) {
+        applyCategoryFilter(categoryParam);
+    }
+
     catalogNav.addEventListener('click', function (e) {
         let target = e.target;
         let item = myLib.closestItemByClass(target, 'catalog__nav-btn');
-
 
         if (item === null || item.classList.contains('is-active')) {
             return;
@@ -40,18 +72,17 @@
         item.classList.add('is-active');
 
         if (filterValue === 'all') {
-            updateChildren(catalog, catalogItems);
-            return;
+            // Обновляем параметры запроса
+            let url = new URL(window.location.href);
+            url.searchParams.delete('category');
+            history.replaceState(null, null, url);
+        } else {
+            // Обновляем параметры запроса
+            let url = new URL(window.location.href);
+            url.searchParams.set('category', filterValue);
+            history.replaceState(null, null, url);
         }
 
-        let filteredItems = [];
-        for (let i = 0; i < catalogItems.length; i += 1) {
-            let current = catalogItems[i];
-            if (current.getAttribute('data-category') === filterValue) {
-                filteredItems.push(current);
-            }
-        }
-
-        updateChildren(catalog, filteredItems);
+        applyCategoryFilter(filterValue);
     });
 })();

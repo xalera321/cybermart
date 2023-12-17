@@ -32,6 +32,9 @@
                                 <li class="menu-list__item">
                                     <a class="menu-list__link text-white" href='./contacts.html'>Контакты</a>
                                 </li>
+                                <li class="menu-list__item">
+                                    <a class="menu-list__link text-white" href='./catalog.html'>Каталог</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -39,7 +42,7 @@
                         <nav class="menu__inner">
                             <ul class="menu-list__right">
                                 <li class="menu-list__item">
-                                    <a class="menu-list__link_number text-white">Звоните с 9:00 до
+                                    <a class="menu-list__link number text-white">Звоните с 9:00 до
                                         21:00</a>
                                 </li>
                                 <li class="menu-list__item">
@@ -60,6 +63,11 @@
                         <a class="logo" href="./index.html" title="на главную">
                             <img class="logo__img" src="./icons/logo.svg" title="#" alt="логотип">
                         </a>
+    
+                        <a class="logo-2" href="./index.html" title="на главную">
+                            <img class="logo-2__img" src="./icons/logo_2.svg" title="#" alt="логотип 2">
+                        </a>
+    
                     </div>
                     <div class="search">
                         <input type="text" id="search__bar" placeholder="Поиск товаров">
@@ -68,12 +76,6 @@
                         </button>
                     </div>
                     <ul class="basket">
-                        <li class="basket__link">
-                            <a href="./shopping_cart.html" class="basket__a">
-                                <img src="./icons/shopping_cart.svg" alt="корзина">
-                                <span class="basket__span text-white"> Корзина</span>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -126,171 +128,215 @@
                 </nav>
             </header>
 
-            <div class="catalog">
-                <div class="card" data-category="smartphones">
+            <div class="catalog" data-category="smartphones">
+                <div class="card">
+            
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/iphone_14_pro.webp" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/iphone_14_pro.webp" alt=""/>
                         </a>
                     </div>
-    
+            
                     <div class="card__bottom">
                         <a href="./catalog.html" class="card__title">
                             Apple IPhone 14 Pro 128Gb, темно-фиолетовый
                         </a>
+                        <div class="product__quantity"></div>
+            
                         <div class="card__prices">
                             <div class="card__price card__price--discount">95 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="1"
+                                data-sb-product-name="Apple IPhone 14 Pro 128Gb, темно-фиолетовый" data-sb-product-price="95990"
+                                data-sb-product-quantity="1" data-sb-product-img="./img/iphone_14_pro.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+            
                     </div>
                 </div>
-    
+            
                 <div class="card" data-category="tablets">
-    
+            
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/pixel_table.webp" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/pixel_table.webp" alt=""/>
                         </a>
                     </div>
-    
+            
                     <div class="card__bottom">
                         <a href="./catalog.html" class="card__title">
                             Google Pixel Tablet 8/128, зеленый
                         </a>
+                        <div class="product__quantity"></div>
+            
                         <div class="card__prices">
                             <div class="card__price card__price--discount">54 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="2"
+                                data-sb-product-name="Google Pixel Tablet 8/128, зеленый" data-sb-product-price="54990"
+                                data-sb-product-quantity="1" data-sb-product-img="./img/pixel_table.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+            
                     </div>
                 </div>
-    
+            
                 <div class="card" data-category="televisions">
-    
+            
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/samsung_tv.webp" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/samsung_tv.webp" alt=""/>
                         </a>
                     </div>
-    
+            
                     <div class="card__bottom">
                         <a href="./catalog.html" class="card__title">
                             50” Телевизор Samsung UE50AU7100U LED, HDR, 2021
                         </a>
+                        <div class="product__quantity"></div>
+            
                         <div class="card__prices">
                             <div class="card__price card__price--discount">32 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="3"
+                                data-sb-product-name="50” Телевизор Samsung UE50AU7100U LED, HDR, 2021"
+                                data-sb-product-price="32990" data-sb-product-quantity="1"
+                                data-sb-product-img="./img/samsung_tv.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+            
                     </div>
                 </div>
-    
+            
                 <div class="card" data-category="audio">
-    
+            
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/yandex_speaker.webp" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/yandex_speaker.webp" alt=""/>
                         </a>
                     </div>
-    
+            
                     <div class="card__bottom">
                         <a href="./catalog.html" class="card__title">
                             Умная колонка Яндекс.Станция Мини, черный
                         </a>
+                        <div class="product__quantity"></div>
+            
                         <div class="card__prices">
                             <div class="card__price card__price--discount">5 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="4"
+                                data-sb-product-name="Умная колонка Яндекс.Станция Мини, черный" data-sb-product-price="5990"
+                                data-sb-product-quantity="2" data-sb-product-img="./img/yandex_speaker.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+            
                     </div>
                 </div>
-    
+            
                 <div class="card" data-category="smartphones">
-    
+            
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/samsung_galaxy_s23.webp" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/samsung_galaxy_s23.webp" alt=""/>
                         </a>
                     </div>
-    
+            
                     <div class="card__bottom">
                         <a href="./catalog.html" class="card__title">
                             Samsung Galaxy S23 Ultra 256 ГБ, черный
                         </a>
+                        <div class="product__quantity"></div>
+            
                         <div class="card__prices">
                             <div class="card__price card__price--discount">97 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="5"
+                                data-sb-product-name="Samsung Galaxy S23 Ultra 256 ГБ, черный" data-sb-product-price="97990"
+                                data-sb-product-quantity="1" data-sb-product-img="./img/samsung_galaxy_s23.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+            
                     </div>
                 </div>
-    
+            
                 <div class="card" data-category="laptops">
-    
+            
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/msi_modern.webp" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/msi_modern.webp" alt=""/>
                         </a>
                     </div>
-    
+            
                     <div class="card__bottom">
                         <a href="./catalog.html" class="card__title">
                             15,6” Ноутбук MSI Modern 15 B12M-211RU, черный
                         </a>
+                        <div class="product__quantity"></div>
+            
                         <div class="card__prices">
                             <div class="card__price card__price--discount">41 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="6"
+                                data-sb-product-name="15,6” Ноутбук MSI Modern 15 B12M-211RU, черный" data-sb-product-price="41990"
+                                data-sb-product-quantity="1" data-sb-product-img="./img/msi_modern.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+            
                     </div>
                 </div>
-    
+            
                 <div class="card" data-category="consoles">
-    
+            
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/playstation_5.png" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/playstation_5.png" alt=""/>
                         </a>
                     </div>
-    
+            
                     <div class="card__bottom">
                         <a href="./catalog.html" class="card__title">
                             Игровая приставка Sony PlayStation 5 Digital Edition 825 ГБ
                         </a>
+                        <div class="product__quantity"></div>
+            
                         <div class="card__prices">
                             <div class="card__price card__price--discount">58 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="7"
+                                data-sb-product-name="Игровая приставка Sony PlayStation 5 Digital Edition 825 ГБ"
+                                data-sb-product-price="58990" data-sb-product-quantity="1"
+                                data-sb-product-img="./img/playstation_5.png">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+            
                     </div>
                 </div>
-    
+            
                 <div class="card" data-category="consoles">
-    
+            
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/playstation_4.webp" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/playstation_4.webp" alt=""/>
                         </a>
                     </div>
-    
+            
                     <div class="card__bottom">
                         <a href="./catalog.html" class="card__title">
                             Игровая приставка Sony PlayStation 4 Slim 500 ГБ
                         </a>
+                        <div class="product__quantity"></div>
+            
                         <div class="card__prices">
                             <div class="card__price card__price--discount">34 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="8"
+                                data-sb-product-name="Игровая приставка Sony PlayStation 5 Digital Edition 825 ГБ"
+                                data-sb-product-price="34990" data-sb-product-quantity="1"
+                                data-sb-product-img="./img/playstation_4.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+            
                     </div>
                 </div>
     
@@ -299,20 +345,25 @@
                 
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/pixel_7.webp" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/pixel_7.webp" alt=""/>
                         </a>
                     </div>
                 
                     <div class="card__bottom">
                         <a href="./catalog.html" class="card__title">
-                            Google Pixel 7 Pro 128 ГБ, hazel (ореховый)
+                            Google Pixel 7 Pro 128 ГБ, ореховый
                         </a>
+                        <div class="product__quantity"></div>
+
                         <div class="card__prices">
                             <div class="card__price card__price--discount">64 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="9"
+                                data-sb-product-name="Google Pixel 7 Pro 128 ГБ, ореховый" data-sb-product-price="64990"
+                                data-sb-product-quantity="1" data-sb-product-img="./img/pixel_7.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+
                     </div>
                 </div>
 
@@ -320,7 +371,7 @@
                 
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/macbook_air_m2.webp" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/macbook_air_m2.webp" alt=""/>
                         </a>
                     </div>
                 
@@ -328,12 +379,16 @@
                         <a href="./catalog.html" class="card__title">
                             13,6” Ноутбук Apple MacBook Air M2, серебристый
                         </a>
+                        <div class="product__quantity"></div>
+
                         <div class="card__prices">
                             <div class="card__price card__price--discount">129 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="10" data-sb-product-name="13,6” Ноутбук Apple MacBook Air M2, серебристый"
+                                data-sb-product-price="129990" data-sb-product-quantity="1" data-sb-product-img="./img/macbook_air_m2.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+
                     </div>
                 </div>
 
@@ -341,7 +396,7 @@
                 
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/xbox_series_x.webp" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/xbox_series_x.webp" alt=""/>
                         </a>
                     </div>
                 
@@ -349,12 +404,17 @@
                         <a href="./catalog.html" class="card__title">
                             Игровая приставка Microsoft Xbox Series X 1000 ГБ
                         </a>
+                        <div class="product__quantity"></div>
+
                         <div class="card__prices">
                             <div class="card__price card__price--discount">45 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="11"
+                                data-sb-product-name="Игровая приставка Microsoft Xbox Series X 1000 ГБ" data-sb-product-price="45990"
+                                data-sb-product-quantity="1" data-sb-product-img="./img/xbox_series_x.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+
                     </div>
                 </div>
 
@@ -362,7 +422,7 @@
                 
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/xbox_series_s.webp" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/xbox_series_s.webp" alt=""/>
                         </a>
                     </div>
                 
@@ -370,12 +430,17 @@
                         <a href="./catalog.html" class="card__title">
                             Игровая приставка Microsoft Xbox Series S 512 ГБ
                         </a>
+                        <div class="product__quantity"></div>
+
                         <div class="card__prices">
                             <div class="card__price card__price--discount">29 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="12"
+                                data-sb-product-name="Игровая приставка Microsoft Xbox Series S 512 ГБ" data-sb-product-price="29990"
+                                data-sb-product-quantity="1" data-sb-product-img="./img/xbox_series_s.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+
                     </div>
                 </div>
 
@@ -383,7 +448,7 @@
     
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/airpods_2.webp" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/airpods_2.webp" alt=""/>
                         </a>
                     </div>
     
@@ -391,12 +456,17 @@
                         <a href="./catalog.html" class="card__title">
                             Наушники TWS Apple AirPods 2, белый
                         </a>
+                        <div class="product__quantity"></div>
+
                         <div class="card__prices">
                             <div class="card__price card__price--discount">9 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="13"
+                                data-sb-product-name="Наушники TWS Apple AirPods 2, белый" data-sb-product-price="9990"
+                                data-sb-product-quantity="1" data-sb-product-img="./img/airpods_2.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+
                     </div>
                 </div>
 
@@ -404,7 +474,7 @@
                 
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/airpods_pro_2.webp" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/airpods_pro_2.webp" alt=""/>
                         </a>
                     </div>
                 
@@ -412,12 +482,17 @@
                         <a href="./catalog.html" class="card__title">
                             Наушники TWS Apple AirPods Pro, белый
                         </a>
+                        <div class="product__quantity"></div>
+
                         <div class="card__prices">
                             <div class="card__price card__price--discount">21 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="14"
+                                data-sb-product-name="Наушники TWS Apple AirPods Pro, белый" data-sb-product-price="21990"
+                                data-sb-product-quantity="1" data-sb-product-img="./img/airpods_pro_2.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+
                     </div>
                 </div>
 
@@ -425,7 +500,7 @@
                 
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/dualsense_controller.webp" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/dualsense_controller.webp" alt=""/>
                         </a>
                     </div>
                 
@@ -433,12 +508,17 @@
                         <a href="./catalog.html" class="card__title">
                             Геймпад беспроводной PlayStation DualSense, белый
                         </a>
+                        <div class="product__quantity"></div>
+
                         <div class="card__prices">
                             <div class="card__price card__price--discount">6 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="15"
+                                data-sb-product-name="Геймпад беспроводной PlayStation DualSense, белый" data-sb-product-price="6990"
+                                data-sb-product-quantity="1" data-sb-product-img="./img/dualsense_controller.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+
                     </div>
                 </div>
 
@@ -446,7 +526,7 @@
                 
                     <div class="card__top">
                         <a href="./catalog.html" class="card__image">
-                            <img src="./img/xbox_controller.webp" alt="Apple IPhone 14 PRO Max Gold" />
+                            <img src="./img/xbox_controller.webp" alt=""/>
                         </a>
                     </div>
                 
@@ -454,12 +534,17 @@
                         <a href="./catalog.html" class="card__title">
                             Геймпад беспроводной Microsoft Xbox Wireless Conrtoller, черный
                         </a>
+                        <div class="product__quantity"></div>
+
                         <div class="card__prices">
                             <div class="card__price card__price--discount">4 990 ₽</div>
-                            <button class="card__add">
+                            <button class="card__add" data-sb-id-or-vendor-code="16"
+                                data-sb-product-name="Геймпад беспроводной Microsoft Xbox Wireless Conrtoller, черный" data-sb-product-price="4990"
+                                data-sb-product-quantity="1" data-sb-product-img="./img/xbox_controller.webp">
                                 <img src="./icons/basket.svg" class="card__add--img">
                             </button>
                         </div>
+
                     </div>
                 </div>
 
@@ -477,8 +562,13 @@
                 <div class="footer__left">
                     <ul class="footer__list">
                         <li class="footer__item">
-                            <a class="footer__link" href="./index.html" title="на главную">
-                                <img class="logo__img" src="./icons/logo.svg" title="#" alt="логотип">
+                            <a class="footer__link logo" href="./index.html" title="на главную">
+                                <img class="logo__img logo__img-footer" src="./icons/logo.svg" title="#" alt="логотип">
+                            </a>
+    
+                            <a class="footer__link logo-2" href="./index.html" title="на главную">
+                                <img class="logo-2__img logo-2__img-footer" src="./icons/logo_2.svg" title="#"
+                                    alt="логотип 2">
                             </a>
                         </li>
                         <li class="footer__item">
@@ -486,6 +576,9 @@
                         </li>
                         <li class="footer__item">
                             <a class="footer__link text-white" href='./contacts.html'>Контакты</a>
+                        </li>
+                        <li class="footer__item">
+                            <a class="footer__link text-white" href='./catalog.html'>Каталог</a>
                         </li>
                     </ul>
                 </div>
@@ -514,14 +607,14 @@
                                     <img class="social__img" src="./icons/telegram.svg" title="#" alt="телеграм">
                                 </a>
                             </li>
-                            <li class="social__item"">
-                                    <a class=" social__contacts" href="#" title="вконтакте">
-                                <img class="social__img" src="./icons/vk.svg" title="#" alt="вконтакте">
+                            <li class="social__item">
+                                <a class=" social__contacts" href="#" title="вконтакте">
+                                    <img class="social__img" src="./icons/vk.svg" title="#" alt="вконтакте">
                                 </a>
                             </li>
-                            <li class="social__item"">
-                                    <a class=" social__contacts" href="#" title="ютуб">
-                                <img class="social__img" src="./icons/youtube.svg" title="#" alt="ютуб">
+                            <li class="social__item">
+                                <a class=" social__contacts" href="#" title="ютуб">
+                                    <img class="social__img" src="./icons/youtube.svg" title="#" alt="ютуб">
                                 </a>
                             </li>
                         </ul>
@@ -533,6 +626,38 @@
     
     <script src="./js/myLib.js"></script>
     <script src="./js/catalog.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    
+    <link rel="stylesheet" href="./css/smartbasket.min.css">
+    
+    <div class="smart-basket__wrapper"></div>
+    
+    <script src="./js/smartbasket.min.js"></script>
+    
+    <script>
+        $(function () {
+            $('.smart-basket__wrapper').smbasket({
+                productElement: 'card',
+                buttonAddToBasket: 'card__add',
+                productPrice: 'product__price-number',
+                productSize: 'product__size-element',
+
+                productQuantityWrapper: 'product__quantity',
+                smartBasketMinArea: 'basket',
+                countryCode: '+7',
+                smartBasketCurrency: '₽',
+                smartBasketMinIconPath: './icons/basket.svg',
+
+                agreement: {
+                    isRequired: true,
+                    isChecked: true,
+                },
+                nameIsRequired: false,
+            });
+        });
+    </script>
 
 </body>
 </html>
